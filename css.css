@@ -138,10 +138,11 @@ header input:checked ~ .menu_item{
     background: transparent;
     color:rgb(212, 121, 17) ;
     border: 2px solid rgb(212, 121, 17) ;
+    cursor: pointer;
 }
-.content{
+content{
     width: 80%;
-    background-color: bisque;
+    background-color: antiquewhite;
 }
 .introduce{
     margin-top: 30px;
@@ -149,7 +150,7 @@ header input:checked ~ .menu_item{
     height: 450px;
     text-align: center;
     align-items: center;
-    box-shadow: 0px 20px 70px 0px rgb(209 209 209 / 40%);
+    box-shadow: 50px 0px 50px 0px rgb(209 209 209 / 60%);
 }
 .image1{
     object-fit: cover;
@@ -157,42 +158,183 @@ header input:checked ~ .menu_item{
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    box-shadow: 0px 20px 70px 0px rgb(209 209 209 / 40%);
+    box-shadow: 0px 20px 70px 0px rgb(209 209 209 / 50%);
 
 }
-.chef{
-    width: 100%;
-    border: 0px;
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
 
-
-}
+.chef:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .chef div{
-    margin-left: 30px;
-    padding: 10px auto;   
+        float: left;
+        width: 20%;
+        padding: 15px;  
 }
+@media screen and (max-width:600px) {
+    .chef div {
+      width: 100%;
+    }
+  } 
 .news{
-    padding: 20px auto;
+    padding: 20px;
     margin-top: 30px;
-    box-shadow: 0px 20px 70px 0px rgb(209 209 209 / 40%);
+    box-shadow: 50px 0px 50px 0px rgb(209 209 209 / 60%);
+    
 }
-.news li{
+@media screen and (max-width: 600px) {
+    .new {
+      width: 100%;
+    }
+  }
+.registration{
+    /* float: left; */
+  padding: 20px;
+  width: 100%;
+}
+.registration li{
     list-style-type: circle;
     margin-left: 50px;
 }
+.form{
+    /* display: flex; */
+    justify-content: center;
+}
+.criteria{
+    width: 50%;
+    float: left;
+
+} 
+
+
+.register-form{
+    float: left;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 20px 20px 0px  ;
+    background-color: antiquewhite ;
+    padding: 15px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0px 20px 70px 0px rgb(209 209 209 / 50%);
+}
+.form:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media screen and (max-width:600px) {
+    .criteria  {
+      width: 100%;
+    }
+  }
+@media screen and (max-width:600px) {
+    .register-form  {
+      width: 100%;
+    }
+  }
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box input[type='text'],
+.input-box input[type='date']{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-size: 16px;
+    display: inline-block;
+    height: 40px;
+    color: #666666;
+}
+.input-box select{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-size: 16px;
+    display: inline-block;
+    height: 40px;
+    color: #666666;
+}
+.input-box option{
+    font-size: 16px;
+}
+.input-box input[type='checkbox']{
+    height: 1.5em;
+    width: 1.5em;
+    vertical-align: middle;
+    line-height: 2em;
+}
+.input-box textarea{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-size: 16px;
+    min-height: 120px;
+    color: #666666;
+}
+.btn-box{
+    text-align: right;
+    margin-top: 30px;
+}
+.btn-box button{
+    padding: 7.5px 15px;
+    border-radius: 20px;
+    background-color: #009999;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+.btn-box button:hover{
+    background: transparent;
+    color:rgb(212, 121, 17) ;
+    border: 2px solid rgb(212, 121, 17) ;
+    cursor: pointer;
+}
+
+
+
 .for_chef{
-    padding: 20px auto;
+    padding: 20px;
     margin-top: 30px;
-    box-shadow: 0px 20px 70px 0px rgb(209 209 209 / 40%);
-    
+    box-shadow: 50px 0px 50px 0px rgb(209 209 209 / 60%);    
 }
-.for_chef_use{
-    margin-top: 30px;
-    display: flex;
-    justify-content:space-around;
-}
+@media screen and (max-width: 600px) {
+    .for_chef {
+      width: 100%;
+    }
+  }
+
 .use1 img{
-    width: 300px;
+    width: 100%;
+    height: 200px;
 }
+.use1 {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after for_chef_use */
+.for_chef_use:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Responsive layout */
+@media screen and (max-width:600px) {
+    .use1 {
+      width: 100%;
+    }
+  } 
+footer {
+      width: 100%;
+      height: 100px;
+    background-color: #585252;
+    text-align: center;
+    padding: 10px;
+  }
