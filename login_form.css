@@ -1,0 +1,80 @@
+:root {
+    color: rgb(212, 121, 17);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.login{
+    width: 400px;
+    height: 300px;
+    margin: 200px auto;
+    padding-top: 30px;
+    background-color: rgb(248, 228, 204);
+    border: 2px solid rgb(212, 121, 17);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.enter{
+    width: 300px;
+    height: 50px;
+    border: 2px solid  rgb(248, 241, 231);
+    border-radius: 10px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    
+
+    
+}
+.login h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin-bottom: 30px;
+
+}
+.login button{
+    width: 250px;
+    height: 50px;
+    border: 2px solid  rgb(248, 241, 231);
+    border-radius: 20px;
+    background-color: rgb(243, 165, 92);
+    font-size: 20px;
+    cursor: pointer;
+    color: antiquewhite;
+}
+.login button:hover{
+    background-color: blanchedalmond;
+    color: rgb(212, 121, 17);
+}
+.login button:focus{
+    outline: none;
+}
+.enter img{
+    width: 30px;
+    vertical-align: middle;
+}
+#img1 {
+    margin-left: -38px;
+}
+#img2{
+    cursor: pointer;
+}
+
+
+.enter input{
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 200px;
+    padding-left: 15px;
+    font-size: 18px;
+}
