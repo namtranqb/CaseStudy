@@ -42,7 +42,7 @@ footer {
     
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 750px) {
     .footer_content{
         display: flex;
         flex-direction: column;

@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinh hoa Ẩm thực</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="tab_content.css">
     <link rel="stylesheet" type="text/css" href="register-form.css">
     <link rel="stylesheet" type="text/css" href="slideshow.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
@@ -24,10 +27,10 @@
         <div class="menu_item">
             <li><a href=""><img src="image/pixlr-bg-result (1).png" style="width: 180px"></a></li>
             <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="#introduce">Giới thiệu</a></li>
             <li><a href="login_form.html">Thành viên</a></li>
-            <li><a href="#tinTuc">Tin tức</a></li>
-            <li><a href="#riengChoChef">Riêng cho Chef</a></li>
-            <li><a href="">Đặt hàng</a></li>
+            <li><a href="#news">Tin tức</a></li>
+            <li><a href="#for_chef">Riêng cho Chef</a></li>
             <li><a href="#footer">Liên hệ</a></li>
             <li><a href="https://www.facebook.com/bampluto"><img src="image/038_001_facebook_social_network_android_material.png"></a>
                 <a href="https://twitter.com/login?lang=vi"><img src="image/038_003_twitter_social_network_android_material.png"></a>
@@ -42,141 +45,155 @@
     </header>
     <content id="content">
         <div class="welcome">
-            <marquee align=”center”>
-                Tinh hoa Ẩm thực - Sân chơi  mới cho Chef
+            <marquee style="text-align:center;">
+                Tinh hoa Ẩm thực - Sân chơi  mới cho Chef Việt
                 </marquee>
         </div>
         <div class="display_content">
-            <div class="introduce">
-            <div style="text-align: center;">
-                <h1>Về với chúng tôi</h1>
-                <h2>Đồng hành cùng đam mê bất tận</h2>
-            </div>
-            
-            <div class="chef">
-                <div class="div-1100">
-                    <div class="info_chef"><a href=""><img class="image1" src="image/ahiep.jpg"></a>
-                        <div class="cv">
-                            <p>Chef: Nguyễn Ngọc Hiệp</p>
-                            <p>Bếp trưởng Điều hành </p>
-                            <p>Resort FLC Quy Nhơn</p>
-                        </div>
-                        
-                    </div>
-                    <div class="info_chef"><a href=""><img class="image1" src="image/tan.jpg"></a>
-                        <div class="cv">
-                            <p>Chef: Huỳnh Văn Tân</p>
-                            <p>Bếp trưởng </p>
-                            <p>Nhà hàng Rồng Vàng</p>
-                        </div>
-                        
-                    </div>
+            <div class="tab">
+                <div class="tab_button">
+                    <button class="tab_link" onclick="openContent(event,'introduce')">Giới thiệu</button>
+                    <button class="tab_link" onclick="openContent(event,'news')">Tin tức</button>
+                    <button class="tab_link" onclick="openContent(event,'for_chef')">Riêng cho Chef</button>
                 </div>
-                <div class="div-1100">
-                    <div class="info_chef"><a href=""><img class="image1" src="image/voQuôc.png"></a>
-                        <div class="cv">
-                            <p>Chef: Võ Quốc</p>
-                            <p>Chuyên gia Ẩm thực</p>
-                            <p>Chủ biên Món ngon Việt Nam </p>
-                        </div>
-                        
-                    </div>
-                    <div class="info_chef"><a href=""><img class="image1" src="image/ramsay.png"></a>
-                        <div class="cv">
-                            <p>Chef: Gordon Ramsay</p>
-                            <p>Chuyên gia Ẩm thực</p>
-                            <p>Đồng sáng lập MasterChef</p>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="news" id="tinTuc">
-                <div class="registration">
-                    <div style="text-align:center">
-                        <h1>Tinh hoa Ẩm thực 2021</h1>
-                        <h2>Đăng ký tham gia để có cơ hội trở thành quán quân Tinh hoa Ẩm thực 2021</h2>
-                    </div>
-                    <div>
-                    </br>
-                        <h2>Ai là người có thể tham gia cuộc thi?</h2>
-                            <p>Tất cả các đầu bếp đang làm việc hoặc sở hữu các quán ăn/ nhà hàng đều có thể tham gia cuộc thi Tinh hoa Ẩm thực 2021</p>
-        
-                    </div>
-                    <div class="form" id="thamGia">
-                    
-                        <div class="register-form">
-                            <form action="" method="post">
-                                <h1>Đăng ký dự thi</h1>
-                                <div class="input-box">
-        
-                                    <input type="text" placeholder="Nhập Họ Và Tên ">
-                                </div>
-                                <div class="input-box">
-        
-                                    <input type="text" placeholder="Địa chỉ nơi làm việc">
-                                </div>
-                                <div class="input-box">
-                                    <div class="col-6">
-                                        <label for="ngaysinh">Ngày sinh</label>
-                                        <br>
-                                        <input type="date" id="ngaysinh"/>
-                                    </div>
-                                    <div class="col-6">
-                                        <label for="gioitinh">Giới tính</label>
-                                        <br>
-                                        <select id="gioitinh">
-                                            <option value="nam">Nam</option>
-                                            <option value="nu">Nữ</option>
-                                        </select>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="input-box">
-                                    <label for="gioithieu">Giới thiệu bản thân</label>
-                                    <br>
-                                    <textarea id="gioithieu"></textarea>
-                                </div>
-                                
-                                <div class="btn-box">
-                                    <button type="submit">Đăng ký</button>
-                                </div>
-                            </form>
-                        </div>
-                            <div class="chuyen-slide">
-                                <img  id="img_s" onclick="changeImage()" src="image/1.jpg"/>
-                            
-                            </div>
- 
-                    </div>
-                </div>
-                    
-            </div>
-            <div class="for_chef" id="riengChoChef">
-                <div style="text-align:center">
-                    <h1>Bí quyết cho đầu bếp</h1>
-                    <h2>Tìm hiểu các mẹo hữu ích để giúp cải thiện hiệu quả nhà bếp</h2>
-                </div>
-                <div class="for_chef_use">
-                    <div class="use1">
-                        <img src="image/biquyetthucdon.jpg">
-                        <h2>Bí quyết thực đơn thành công</h2>
-                        <p>Hiểu được những nhân tố để làm nên một thực đơn </br>sáng tạo và hãy nâng cấp thực đơn của bạn từ hôm nay.</p>
-                    </div>
-                    <div class="use1">
-                        <img src="image/trinhbaymonan.jpg">
-                        <h2>Bí quyết trình bày món ăn</h2>
-                        <p>Gây ấn tượng với các thực khách thông qua</br> những món ăn trông cũng thật tuyệt vời </br>như chính hương vị của nó bằng các bí quyết sau. </p>
-                    </div>
-                    <div class="use1">
-                        <img src="image/salad.jpg">
-                        <h2>Trang trí món Salad của bạn thật bắt mắt</h2>
-                        <p>Tự hào biến Salad thành một món ăn chính độc đáo</p>
-                    </div>
                 
+                <div class="tab_search">
+                    <input  id ="search" type="text" placeholder="Search..">
+                    <a href=""><img src="image/logosearch.png"/></a>
                 </div>
+                
             </div>
+                <div class="tab_content" id="introduce" style="display: block;">
+                    <div style="text-align: center;">
+                        <h1>Về chúng tôi</h1>
+                        <h2>Đồng hành cùng đam mê bất tận</h2>
+                        <p>----------------- v -----------------</p>
+                        <div class="chef">
+                            <div class="div-1100">
+                                <div class="info_chef"><a href=""><img class="image1" src="image/ahiep.jpg"></a>
+                                    <div class="cv">
+                                        <p>Chef: Nguyễn Ngọc Hiệp</p>
+                                        <p>Bếp trưởng Điều hành </p>
+                                        <p>Resort FLC Quy Nhơn</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="info_chef"><a href=""><img class="image1" src="image/tan.jpg"></a>
+                                    <div class="cv">
+                                        <p>Chef: Huỳnh Văn Tân</p>
+                                        <p>Bếp trưởng </p>
+                                        <p>Tom's Bar & Grill - Singapore</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="div-1100">
+                                <div class="info_chef"><a href=""><img class="image1" src="image/voQuôc.png"></a>
+                                    <div class="cv">
+                                        <p>Chef: Võ Quốc</p>
+                                        <p>Chuyên gia Ẩm thực</p>
+                                        <p>Chủ biên Món ngon Việt Nam </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="info_chef"><a href=""><img class="image1" src="image/ramsay.png"></a>
+                                    <div class="cv">
+                                        <p>Chef: Gordon Ramsay</p>
+                                        <p>Chuyên gia Ẩm thực</p>
+                                        <p>Đồng sáng lập MasterChef</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_content" id="news" style="display: none;">
+                    <div class="registration">
+                        <div style="text-align:center">
+                            <h1>Tinh hoa Ẩm thực 2021</h1>
+                            <h2>Đăng ký tham gia để có cơ hội trở thành quán quân Tinh hoa Ẩm thực 2021</h2>
+                        </div>
+                        <div>
+                        </br>
+                            <h2>Ai là người có thể tham gia cuộc thi?</h2>
+                                <p>Tất cả các đầu bếp đang làm việc hoặc sở hữu các quán ăn/ nhà hàng đều có thể tham gia cuộc thi Tinh hoa Ẩm thực 2021</p>
+            
+                        </div>
+                        <div class="form" id="thamGia">
+                        
+                            <div class="register-form">
+                                <form action="" method="post">
+                                    <h1>Đăng ký dự thi</h1>
+                                    <div class="input-box">
+            
+                                        <input type="text" placeholder="Nhập Họ Và Tên ">
+                                    </div>
+                                    <div class="input-box">
+            
+                                        <input type="text" placeholder="Địa chỉ nơi làm việc">
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="col-6">
+                                            <label for="ngaysinh">Ngày sinh</label>
+                                            <br>
+                                            <input type="date" id="ngaysinh"/>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="gioitinh">Giới tính</label>
+                                            <br>
+                                            <select id="gioitinh">
+                                                <option value="nam">Nam</option>
+                                                <option value="nu">Nữ</option>
+                                            </select>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="gioithieu">Giới thiệu bản thân</label>
+                                        <br>
+                                        <textarea id="gioithieu"></textarea>
+                                    </div>
+                                    
+                                    <div class="btn-box">
+                                        <button type="submit">Đăng ký</button>
+                                    </div>
+                                </form>
+                            </div>
+                                <div class="chuyen-slide">
+                                    <img  id="img_s" onclick="changeImage()" src="image/1.jpg"/>
+                                
+                                </div>
+    
+                        </div>
+                    </div>
+                        
+                </div>
+                <div class="tab_content" id="for_chef" style="display: none;">
+                    <div style="text-align:center">
+                        <h1>Bí quyết cho đầu bếp</h1>
+                        <h2>Tìm hiểu các mẹo hữu ích để giúp cải thiện hiệu quả nhà bếp</h2>
+                    </div>
+                    <div class="for_chef_use">
+                        <div class="use1">
+                            <img src="image/biquyetthucdon.jpg">
+                            <h2>Bí quyết thực đơn thành công</h2>
+                            <p>Hiểu được những nhân tố để làm nên một thực đơn </br>sáng tạo và hãy nâng cấp thực đơn của bạn từ hôm nay.</p>
+                        </div>
+                        <div class="use1">
+                            <img src="image/trinhbaymonan.jpg">
+                            <h2>Bí quyết trình bày món ăn</h2>
+                            <p>Gây ấn tượng với các thực khách thông qua</br> những món ăn trông cũng thật tuyệt vời </br>như chính hương vị của nó bằng các bí quyết sau. </p>
+                        </div>
+                        <div class="use1">
+                            <img src="image/salad.jpg">
+                            <h2>Trang trí món Salad của bạn thật bắt mắt</h2>
+                            <p>Tự hào biến Salad thành một món ăn chính độc đáo</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            
         </div>
     </content>
     <footer id ="footer">
@@ -190,9 +207,11 @@
                     <p>Design by Nam Tran</p>
                 </div>
             </div>
-
+            <div>
+                <img  style=" width: 150px;height: 100px;"src="image/call-me-logo-2.2-purple.png"/>
+            </div>
             <div class="footer_adress">
-                <ul><i><u>Liên hệ:</u></i>
+                <ul>
                     <li>
                         <a>+84 0935 737475</a>
                     </li>
@@ -213,12 +232,14 @@
             </div>
       
         </div>
-        <div class="footer_bottom">
-            
+        <div class="footer_bottom" style="text-align: center;">
+            <p>------------ Good luck for you ------------</p>
         </div>
     </footer>
     
     <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="tab_content.js"></script>
     <script type="text/javascript" src="slideshow.js"></script>
+    
 </body>
 </html>

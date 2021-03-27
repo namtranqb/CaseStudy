@@ -6,14 +6,25 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Dosis', sans-serif;
     
+}
+#back{
+    width: 80px;
+    height: 80px;
+    margin-top:  30px;
+    margin-left: 50px;
+
+}
+#back img{
+    width: 50px;
+    height: 50px;
 }
 .login{
     width: 400px;
-    height: 300px;
-    margin: 200px auto;
-    padding-top: 30px;
+    height: 330px;
+    margin: 10px auto;
+    padding-top: 15px;
     background-color: rgb(248, 228, 204);
     border: 2px solid rgb(212, 121, 17);
     border-radius: 20px;
@@ -78,3 +89,32 @@
     padding-left: 15px;
     font-size: 18px;
 }
+.forgotPassword{
+    color: rgb(81, 83, 231);
+    margin-top: 20px;
+}
+footer{
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer_logo img{
+    width: 250px;
+    height: 170px;
+}
+footer .footer_about{
+    align-items: center;
+}
+@media all and (max-width: 750px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+

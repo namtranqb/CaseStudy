@@ -6,21 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="login_form.css">
     <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="login">
-        <h2>Login Form</h2>
-        <div class="enter">
-            <img id="img1" src="image/user.PNG">
-            <input type ="text" placeholder="Username">
+    <header>
+
+    </header>
+    <content>
+        <div id="back">
+            <a href="index.html"><img src="image/home.png"></a>
         </div>
-        <div class="enter">
-            <img src="image/pass.PNG">
-            <input id="pass" type ="password" placeholder="Enter Password">
-            <img id="img2" onclick=showPassword() src="image/eye.jpg">
+        <div class="login">
+            <h2>Login Form</h2>
+            <div class="enter">
+                <img id="img1" src="image/user.PNG">
+                <input type ="text" placeholder="Username">
+            </div>
+            <div class="enter">
+                <img src="image/pass.PNG">
+                <input id="pass" type ="password" placeholder="Enter Password">
+                <img id="img2" onclick=showPassword() src="image/eye.jpg">
+            </div>
+            <button id="login_button" >Login</button>
+            <div class="forgotPassword">
+                <a href=""><i style="font-size: 16px;">Forgot password ?</i></a>
+            </div>
+            
         </div>
-        <button id="login_button" >Login</button>
-    </div>
+    </content>
+    <footer>
+        <div class="footer_logo">
+            <img src="image/pixlr-bg-result (1).png">
+        </div>
+        
+        <div class="footer_about">
+                    <h2>©2021 Tinh hoa Ẩm thực</h2>
+                    <h3>Tp.Huế - Việt Nam</h3>
+                    <p>Design by Nam Tran</p>
+        </div>
+    </footer>
+    
+
     <script type="text/javascript" src="login_form.js"></script>
 </body>
 </html>

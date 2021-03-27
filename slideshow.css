@@ -9,15 +9,17 @@
 } */
 .chuyen-slide{
     width: 100%;
-    max-width: 800px;
-    margin: 20px;
+    max-width: 1000px;
+    margin: 20px 20px 20px 0px;
     border: 2px solid #eebe57;
     align-items: center;
-    text-align: center;
-    /*border-radius: 20px;
-    box-shadow: 0px 20px 70px 0px rgb(209 209 209 / 40%); */
+    /* text-align: center; */
+    /*border-radius: 20px; */
+    box-shadow: 0px 20px 70px 0px rgb(209 209 209 / 40%);
 }
 .chuyen-slide img{
     width: 100%;
-    height: 505px;
+    max-width: 1000px;
+    height: 500px;
 }
+
